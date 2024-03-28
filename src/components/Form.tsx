@@ -1,19 +1,27 @@
 import React, { useState } from 'react';
+import Signup from './Signup';
+import Login from './Login';
 
 
 function Form(){
-const [firstName, setFirstName] = React.useState("");
-const [lastName, setLastName] = useState("");
+// const [firstName, setFirstName] = React.useState("");
+// const [lastName, setLastName] = useState("");
 
-    const submitForm = (event: React.FormEvent) => {
-        event.preventDefault();
 
-        console.log({firstName, lastName});
-    }
+//     const submitForm = (event: React.FormEvent) => {
+//         event.preventDefault();
+
+//         console.log({firstName, lastName});
+//     }
 
     return(
         <div>
-            <form onSubmit={submitForm}>
+            
+            <Signup />
+            <br/>
+            <Login />
+            
+            {/* <form onSubmit={submitForm}>
                 <fieldset>
                     <label>
                         <p>Name</p>
@@ -24,7 +32,7 @@ const [lastName, setLastName] = useState("");
                 </fieldset>
                 <button type='submit'>Submit</button>
                 
-        </form>
+        </form> */}
         </div>
         
     );
