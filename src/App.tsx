@@ -4,6 +4,7 @@ import Counter from './components/Counter';
 import PropDrilling from './components/PropDrilling';
 import Context from './components/Context';
 import Form from './components/Form';
+import Changer from './components/Changer';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <PropDrilling />
           <Context />
           <Form />
+          <Changer car={"Honda"} />
+
         </p>
       </header>
     </div>
